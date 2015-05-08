@@ -57,16 +57,12 @@ pop s = Stack (tail $ getList s)
 
 top = head . getList
 
-
 -- b)
-------------------------------------------------------------------------------
 
 module Multiset (Multiset, emptyMultiset, isEmptyMultiset,
                  insert,   delete,        occurs) where
 
-------------------------------------------------------------------------------
-
--- I N T E R F A C E    ( P U B L I C ) -------------------------------------
+-- I N T E R F A C E   :   P U B L I C ---------------------------------------
 
 -- MultiSet a : a multiset of items of type 'a'
 
@@ -87,9 +83,7 @@ insert :: Eq a => a -> Multiset a -> Multiset a
 --                 from multiset 'mset'
 delete :: Eq a => a -> Multiset a -> Multiset a
 
-------------------------------------------------------------------------------
-
--- I M P L E M E N T A T I O N    ( P R I V A T E ) --------------------------
+-- I M P L E M E N T A T I O N   :   P R I V A T E ---------------------------
 --
 type Multiset a = [(a, Int)]
 

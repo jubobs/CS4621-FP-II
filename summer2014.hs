@@ -57,6 +57,7 @@ top (Push x _, _) = x
 
 size = snd
 
+
 -- Question 3
 -- a)
 getDef t ((name, def) : es)

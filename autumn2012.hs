@@ -31,15 +31,11 @@ inOrderTraversal bst = go bst []
 
 -- Question 2
 -- a)
-------------------------------------------------------------------------------
-
 module Graph (Graph, Node, Edge, emptyGraph, nodes, edges,
               node, label, edge, start, end,
               insertNode, deleteNode, insertEdge, deleteEdge) where
 
-------------------------------------------------------------------------------
-
--- I N T E R F A C E    ( P U B L I C ) -------------------------------------
+-- I N T E R F A C E   :   P U B L I C ---------------------------------------
 
 -- Graph : a directed unweighted graph
 
@@ -135,7 +131,7 @@ sources g = [ n | n <- nodes g, null [ e | e <- edges g, end e == n ]]
 --     3 increase .
 --
 -- the most recent definition of 'increase' is used, resulting in '5'.
---
+
 -- b)
 -- To implement 'call' as a built-in word:
 --   Add the following before the case expression in the definition of 'eval'':

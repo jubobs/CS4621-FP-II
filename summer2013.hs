@@ -4,7 +4,7 @@
 -- a)
 module List (List, Nil, Cons, null, head, tail) where
 
--- I N T E R F A C E : P U B L I C -------------------------------------------
+-- I N T E R F A C E   :   P U B L I C ---------------------------------------
 
 -- List a : an ordered collection of items of type a
 
@@ -17,7 +17,7 @@ head :: List a -> a
 -- tail xs : the List obtained by removing the first element in List 'xs'
 tail :: List a -> List a
 
--- I M P L E M E N T A T I O N : P R I V A T E -------------------------------
+-- I M P L E M E N T A T I O N   :   P R I V A T E ---------------------------
 
 data List a = Nil | Cons a (List a)
 
