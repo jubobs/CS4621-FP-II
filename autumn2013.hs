@@ -25,7 +25,7 @@ isStrictlyIncreasing xs = and $ zipWith (<) xs (tail xs)
 --               subtrees in BST 'bst'
 flipBST :: BST a -> BST a
 flipBST EmptyBST = EmptyBST
-flipBST (Node lsub v rsub) = Node rsub v lsub
+flipBST (Node lsub v rsub) = Node (flipBST rsub) v (flipBST lsub)
 
 
 -- Question 2
