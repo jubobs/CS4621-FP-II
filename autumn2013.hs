@@ -36,7 +36,7 @@ data Stack a = EmptyStack | Push a (Stack a)
 emptyStack = EmptyStack
 
 isEmptyStack EmptyStack = True
-isEmptyStack _          = False
+isEmptyStack (Push _ _) = False
 
 push = Push
 
